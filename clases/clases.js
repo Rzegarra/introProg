@@ -39,27 +39,109 @@
 //************************************************************
 //************************************************************
 
-var a=[1,4,5,8,4];
-var b=[];
-var temp=0;
-for (var i = 0; i < a.length; i++) {
-	if(a[i]>4){
-		b[temp++]=a[i]
-	}
-};
-console.log(b);
+		// var a=[1,4,5,8,4];
+		// var b=[];
+		// var temp=0;
+		// for (var i = a.length - 1; i >= 0; i--) {
+		// 	if(a[i]>4){
+		// 		b[temp++]=a[i]
+		// 	}
+		// };
+		// console.log(b);
 
 
-var a=[1,4,5,8,4];
-var b=[];
-var temp=0;
-for (var i = a.length - 1; i >= 0; i--) {
-	if(i>=2){
-		b[temp++]=a[i]
-	}
-};
-console.log(b);
+		// var a=[1,4,5,8,4];
+		// var b=[];
+		// var temp=0;
+		// for (var i = 0; i < a.length; i++) {
+		// 	if(i>2){
+		// 		b[temp++]=a[i]
+		// 	}
+		// };
+		// console.log(b);
+
+		// var a=[1,2];
+		// var b=[2,3];
+		// var c=[];
+		// var temp=0;
+		// for (var i = 0; i < a.length; i++) {
+		// 	for (var j = 0; j < b.length; j++) {
+		// 		c[temp++]=b[i]*a[j]
+		// 	};
+		// };
+		// console.log(c);
 
 //si tienen un vector  a=[4,2,1,3,5] y se quiere eliminar el 
 //primer dato y guardar este resultado en un vetor b; entonces
 //el vector b ahora contendria b=[2,1,3,5]
+
+// se tienen dos vectores vec1=[1,2,3,4] , vec2=[5,4,2,1,4];
+//que vectoir es el mas largo.
+
+// var vec1=[1,2,5,4]
+// var vec2=[2,4,5,4,7]
+// if (vec1.length<vec2.length) {
+// 	console.log('este es el mayor = ' + vec2)
+// };
+// else{
+// 	console.log('este es el menor = '+vec1)
+// }
+
+//de los vectores anteriores imprimir el que tenga mayor cantidad de 4's
+
+		// var vec1=[1,2,5,4];
+		// var vec2=[2,4,5,4,7];
+		// var tempvec1=0;
+		// var tempvec2=0;
+		// for (var i = vec1.length - 1; i >= 0; i--) {
+		// 	if (vec[i]==4) {
+		// 		tempvec1++;
+		// 	};
+		// };
+		// for (var i = vec2.length - 1; i >= 0; i--) {
+		// 	if (vec[i]==4) {
+		// 		tempvec2++;
+		// 	};
+		// };
+		// if (tempvec1>tempvec2) {
+		// 	console.log(vec1);
+		// };
+		// else{
+		// 	console.log(vec2);
+		// }
+/////////////////////////////
+////////////////////////////
+
+var vec1=[1,2,5,4];
+var vec2=[2,4,5,4,7];
+var tam1=vec1.length;
+var tam2=vec2.length;
+var cantidad=0;
+var mayor;
+if (tam1>tam2) 
+	mayor=tam1;
+else
+	mayor=tam2;
+for (var i = mayor - 1; i >= 0; i--) {
+	if (vec1[i]==4) {
+		cantidad++
+	};
+	if (vec2[i]==4) {
+		cantidad--
+	};
+};
+if (cantidad>0){
+	console.log('el q ue tiene mas 4s es = '+ vec1);
+}
+else if (cantidad==0){
+	console.log('ambos tienen la misma cantidad de 4s');
+}
+else{
+	console.log('el q ue tiene mas 4s es = '+ vec2);
+}
+//de los vectores hallar  la suma de todos los numeros que contengan.
+
+//de los vectores, multiplicar uno a uno cada valor que tengan y dart la suma del total.
+//se recomienda usar dos (for) ---- >      for(){
+//												for(){}
+//											}	
