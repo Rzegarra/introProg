@@ -145,3 +145,17 @@ else{
 //se recomienda usar dos (for) ---- >      for(){
 //												for(){}
 //											}	
+
+//solo pude multiplicar los 2 valores uno a cada uno pero nose como sumarlos ... :/
+
+var vec3=[1,2,5,4]  
+var vec4=[2,4,5,4,7]
+var vec5=[]; //creo la variable vec5 para almacenar la respuesta
+var respuesta=0;  //se creo la variable respues para que se valla acumulando los numeros para que despues pertenescan ala variable vec5
+    for (var i = 0; i < vec3.length; i++) {
+        for (var y = 0; y < vec4.length; y++) {
+            vec5[respuesta++]=vec4[y]*vec3[i]
+        };
+        };
+        console.log(vec5);
+       
