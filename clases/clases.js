@@ -177,14 +177,100 @@
 
 //solo pude multiplicar los 2 valores uno a cada uno pero nose como sumarlos ... :/
 
-var vec3=[1,2,5,4]
-var vec4=[2,4]
-var vec5=[]; //creo la variable vec5 para almacenar la respuesta
-var respuesta=0;  //se creo la variable respues para que se valla acumulando los numeros para que despues pertenescan ala variable vec5
-    for (var i = 0; i < vec3.length; i++) {
-        for (var y = 0; y < vec4.length; y++) {
-            respuesta+=vec4[y]*vec3[i];
-        };
-    };
-console.log(respuesta);
+// var vec3=[1,2,5,4]
+// var vec4=[2,4]
+// var vec5=[]; //creo la variable vec5 para almacenar la respuesta
+// var respuesta=0;  //se creo la variable respues para que se valla acumulando los numeros para que despues pertenescan ala variable vec5
+//     for (var i = 0; i < vec3.length; i++) {
+//         for (var y = 0; y < vec4.length; y++) {
+//             respuesta+=vec4[y]*vec3[i];
+//         };
+//     };
+// console.log(respuesta);
        
+
+// var vec1=[1,2,3,4,5,6];
+// invertir el vector , entonces el resultado deberia ser
+// [6,5,4,3,2,1]
+
+// var t=3;
+// var temp=3;
+
+// var text='*';
+// for (var i = 0; i <= 6; i++) {
+// 	console.log(text + '\n')
+// 	text+='*';
+// 	if(i>=t){
+// 		text=text.slice(0,temp--)
+// 	}
+// };
+
+// var filas=7;
+// var columnas=4;
+// for (var i = 0; i <= filas; i++) {
+// 	for (var j=0; j <= columnas; j++) {
+// 		console.log('*')
+// 	};
+// 	console.log('\n')
+// };
+
+// *
+// **
+// ***
+// ****
+// ***
+// **
+// *
+
+
+// [1,2,5,4]+
+// [2,4,3,1]
+//=[3,6,8,5]
+
+// var vec1=[1,2,5,4]
+// var vec2=[2,4,3,1]
+// var resultado = [];
+// for (var i=0; i <vec2.length; i++) {
+// 	 resultado[i]=vec1[i]+vec2[i]
+// };
+// console.log(resultado)
+
+// [1,2,5,4]
+// [2,4,3,1]
+// [1,5,4,7]
+// [7,1,2,4]
+//sacar la cantidad de 4's que existe en la matriz
+// matriz=[[1,2,5,4],
+// 		  [2,4,3,1],
+// 		  [1,5,4,7],
+// 		  [7,1,2,4]]
+// columnas = matriz.length()
+// filas =
+
+// var matriz=[[1,2,5,4,5],
+// 			[2,4,3,1,4],
+// 			[1,5,4,7,2],
+// 			[7,1,2,4,4]];
+
+// var filas=matriz.length;
+// var columnas=matriz[0].length;
+// var resultado=0;
+// for (var i=0; i<filas; i++) {
+// 	for (var j=0; j<columnas; j++) {
+// 		if(matriz[i][j]==4){
+// 			resultado++;
+// 		}
+// 	};
+// };
+// console.log('el resultado es = ' + resultado)
+//
+
+
+//ejercicios
+// matriz=[[1,2,5,4],
+// 		  [2,4,3,1],
+// 		  [1,5,4,7],
+// 		  [7,1,2,4]]
+//1.- que invierta la matriz.
+//2.- la suma de todos los datos que estan en la matriz.
+//3.- la suma de los dos primeros vectores de la matriz.
