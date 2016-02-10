@@ -274,3 +274,58 @@
 //1.- que invierta la matriz.
 //2.- la suma de todos los datos que estan en la matriz.
 //3.- la suma de los dos primeros vectores de la matriz.
+
+
+
+//1.- que invierta la matriz.
+var matriz=[[1,2,5,4],
+            [2,4,3,1],
+            [1,5,4,7],
+            [7,1,2,4]]
+var filas=matriz.length;
+    for (var i=filas-1 ; i>=0 ; i--) {
+            console.log (matriz[i])
+        };
+//inverti la suma pero, al consultar una pocision consultar no
+//aparecia el numero del conjunto invertido sino como si no lo huebira invertido
+
+
+
+
+//2.- la suma de todos los datos que estan en la matriz.
+var matriz=[[1,2,5,4],
+            [2,4,3,1],
+            [1,5,4,7],
+            [7,1,2,4]]
+var resultado=[];
+var filas=matriz.length;
+var columnas=matriz[0].length;
+    for (var i=0; i<filas; i++) {
+        for (var j=0; j<columnas; j++){
+            resultado+=matriz[i][j]
+        };
+    };
+    console.log(resultado)
+
+//intente de varias formas, la mas clara fue esta pero me toma los valores
+//numericos como si fueran strings o chars, y no como numero. 
+
+
+
+
+//3.- la suma de los dos primeros vectores de la matriz
+var matriz=[[1,2,5,4],
+            [2,4,3,1],
+            [1,5,4,7],
+            [7,1,2,4]]
+var resultado=[];
+var filas=matriz.length;
+var columnas=matriz[0].length;
+    for (var i=0; i<filas; i++) {
+        for (var j=0; j<columnas; j++){
+            resultado=matriz[1]+matriz[2]
+        };
+    };
+    console.log(resultado)
+//me aparece lo mismo lo toma como string o chars y como numero siento que
+//falta agregar algo que lo lea como numero.
