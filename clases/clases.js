@@ -327,5 +327,8 @@ var columnas=matriz[0].length;
         };
     };
     console.log(resultado)
-//me aparece lo mismo lo toma como string o chars y como numero siento que
+//me aparece lo mismo lo toma como string o chars y no como numero, siento que
 //falta agregar algo que lo lea como numero.
+
+//Estuve buscando en internet porque passaba eso y encontre una pagina donde me decia que ponga el parseInt() poero ahora el problema
+//era que el .lenght que recorria las columnas me decia que era "una funcion anonima".
