@@ -390,3 +390,4 @@
 //4.-suma de la los datos que esten debajo de 
 //   la diagonal principal de la matriz =22
 //5.-suma del perimetro = 37
+//
