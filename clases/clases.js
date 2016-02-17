@@ -278,14 +278,12 @@
 
 
 //1.- que invierta la matriz.
-var matriz=[[1,2,5,4],
-            [2,4,3,1],
-            [1,5,4,7],
-            [7,1,2,4]]
-var filas=matriz.length;
-    for (var i=filas-1 ; i>=0 ; i--) {
-            console.log (matriz[i])
-        };
+// var matriz=[[1,2,5,4],
+//             [2,4,3,1],
+//             [1,5,4,7],
+//             [7,1,2,4]]
+
+//     console.log('matriz res. = '+matriz2)
 //inverti la suma pero, al consultar una pocision consultar no
 //aparecia el numero del conjunto invertido sino como si no lo huebira invertido
 
@@ -293,19 +291,19 @@ var filas=matriz.length;
 
 
 //2.- la suma de todos los datos que estan en la matriz.
-var matriz=[[1,2,5,4],
-            [2,4,3,1],
-            [1,5,4,7],
-            [7,1,2,4]]
-var resultado=[];
-var filas=matriz.length;
-var columnas=matriz[0].length;
-    for (var i=0; i<filas; i++) {
-        for (var j=0; j<columnas; j++){
-            resultado+=matriz[i][j]
-        };
-    };
-    console.log(resultado)
+	// var matriz=[[1,2,5,4],
+	//             [2,4,3,1],
+	//             [1,5,4,7],
+	//             [7,1,2,4]]
+	// var resultado=0;
+	// var filas=matriz.length;
+	// var columnas=matriz[0].length;
+	//     for (var i=0; i<filas; i++) {
+	//         for (var j=0; j<columnas; j++){
+	//             resultado+=matriz[i][j]
+	//         };
+	//     };
+	//     console.log(resultado)
 
 //intente de varias formas, la mas clara fue esta pero me toma los valores
 //numericos como si fueran strings o chars, y no como numero. 
@@ -314,21 +312,81 @@ var columnas=matriz[0].length;
 
 
 //3.- la suma de los dos primeros vectores de la matriz
-var matriz=[[1,2,5,4],
-            [2,4,3,1],
-            [1,5,4,7],
-            [7,1,2,4]]
-var resultado=[];
-var filas=matriz.length;
-var columnas=matriz[0].length;
-    for (var i=0; i<filas; i++) {
-        for (var j=0; j<columnas; j++){
-            resultado=matriz[1]+matriz[2]
-        };
-    };
-    console.log(resultado)
-//me aparece lo mismo lo toma como string o chars y no como numero, siento que
+	// var matriz=[[1,2,5,4],
+	//             [2,4,3,1],
+	//             [1,5,4,7],
+	//             [7,1,2,4]]
+	// var resultado=[];
+	// var suma=0;
+	// var filas=matriz.length;
+	// var columnas=matriz[0].length;
+	//     for (var i=0; i<filas; i++) {
+	//         for (var j=0; j<columnas; j++){
+	//         	suma+=matriz[j][i]
+	//         };
+	//         resultado[i]=suma;
+	//         suma=0;
+	//     };
+	//     console.log(resultado)
+	//     //[11,12,14,16]
+// //me aparece lo mismo lo toma como string o chars y no como numero, siento que
 //falta agregar algo que lo lea como numero.
 
 //Estuve buscando en internet porque passaba eso y encontre una pagina donde me decia que ponga el parseInt() poero ahora el problema
 //era que el .lenght que recorria las columnas me decia que era "una funcion anonima".
+
+//ejercicios
+// matriz=[[1,2,5,4],
+// 		[2,4,3,1],
+// 		[1,5,4,7],
+// 		[7,1,2,4]];
+// 	var resultado=[];
+// 	var filas=matriz.length;
+// 	for (var i = 0; i <= filas; i++) {
+// 		resultado[i]=[];
+// 	};
+	// var temp=0;
+	// var columnas=matriz[0].length;
+	//     for (var i=0; i<filas; i++) {
+	//     	temp=0;
+	//         for (var j=columnas-1; j>=0; j--){
+	//         	resultado[i][temp++]=matriz[i][j];
+	//         };
+	//         console.log(resultado[i]);
+
+	//     };
+//1.- que invierta los datos de cada vector que esta contenido.
+// [4,5,2,1]
+// [1,3,4,2]
+// [7,4,5,1]
+// [4,2,1,7]
+
+//2.- la suma de de la diagonal principal
+// [1,4,4,4]
+// matriz=[[1,2,5,4],
+	// 	[2,4,3,1],
+	// 	[1,5,4,7],
+	// 	[7,1,2,4]];
+	// var resultado=0;
+	// var filas=matriz.length;
+	// for (var i = 0; i < filas; i++) {
+	// 	resultado+=matriz[i][i];
+	// };
+	// console.log(resultado)
+
+	// //ejercicios
+// matriz=[[1,2,5,4],
+// 		  [2,4,3,1],
+// 		  [1,5,4,7],
+// 		  [7,1,2,4]]
+//1.- inversa de cada vector que contiene y tambien inversad de matriz
+// [4,2,1,7]
+// [7,4,5,1]
+// [1,3,4,2]
+// [4,5,2,1]
+//2.-suma de la diagonal secundaria = 19
+//3.-cuantas veces se repite el numero 5 en la matriz e
+//   imprimir la posicion donde esten estos.
+//4.-suma de la los datos que esten debajo de 
+//   la diagonal principal de la matriz =22
+//5.-suma del perimetro = 37
