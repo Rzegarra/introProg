@@ -335,6 +335,12 @@
 //Estuve buscando en internet porque passaba eso y encontre una pagina donde me decia que ponga el parseInt() poero ahora el problema
 //era que el .lenght que recorria las columnas me decia que era "una funcion anonima".
 
+
+
+
+
+
+
 //ejercicios
 // matriz=[[1,2,5,4],
 // 		[2,4,3,1],
@@ -391,3 +397,93 @@
 //   la diagonal principal de la matriz =22
 //5.-suma del perimetro = 37
 //
+
+//1.- inversa de cada vector que contiene y tambien inversad de matriz
+//
+// var matriz=[[1,2,5,4],
+//             [2,4,3,1],
+//             [1,5,4,7],
+//             [7,1,2,4]];
+// var resultado=[];
+//     for (var i = 0; i <= filas; i++) {
+//         resultado[i]=[]
+//     };
+// var temp=0;
+// var filas=matriz.length
+// var columnas=matriz[0].length
+
+//     for(var i=filas-1 ; i>=0 ; i--){
+//         for(var j=columnas-1 ; j>=0 ; j--){
+//             resultado[temp++]=matriz[i][j]
+//         };
+//     };
+// console.log(resultado)
+// alert(resultado)
+
+//2.-suma de la diagonal secundaria = 19
+// var matriz=[[1,2,5,4],
+//             [2,4,3,1],
+//             [1,5,4,7],
+//             [7,1,2,4]];
+// var resultado=0;
+// var filas=matriz.length;
+// var columnas=matriz[0].length;
+//     for (var i=filas-1; i>=0; i--) {
+//         for(var j=columnas-1; j>=0; j--)
+//         resultado+=matriz[j--][i--]
+// };
+// console.log(resultado)
+
+
+
+//3.-cuantas veces se repite el numero 5 en la matriz e
+//   imprimir la posicion donde esten estos.
+// var matriz=[[1,2,5,4],
+//             [2,4,3,1],
+//             [1,5,4,7],
+//             [7,1,2,4]];
+// var filas=matriz.length;
+// var columnas=matriz[0].length;
+// var resultado=0;
+// var resul=[]
+// for (var i=0; i<filas; i++) {
+//     for (var j=0; j<columnas; j++) {
+//         if(matriz[i][j]==5){
+//         resultado++;
+//         }
+//     };
+// };
+// console.log ("la cantidad de 5's es = " + resultado);
+/////////////////// no sabia como o que hacer para hallar las pocisiones :S
+
+
+
+
+
+//5.-suma del perimetro = 37
+// var matriz=[[1,2,5,4],
+//             [2,4,3,1],
+//             [1,5,4,7],
+//             [7,1,2,4]];
+// var resultado=0;
+// var filas=matriz.length
+// var columnas=matriz[0].length
+//     for (var i=0 ; i<filas ; i++) {
+//         for (var j=0 ; j<columnas ; j++) {          
+//             if(matriz[1][1]==4){
+//                 resultado-4
+//             }
+//             else if(matriz[1][2]==3){
+//                 resultado-3
+//             }
+//             else if(matriz[2][2]==5){
+//                 resultado-5
+//             }
+//             else if(matriz[2][3]==4){
+//                 resultado-4
+//             }
+//             resultado+=matriz[i][j] 
+//         };
+ 
+//     };
+// console.log(resultado)
