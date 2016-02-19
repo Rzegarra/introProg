@@ -363,10 +363,10 @@
 
 //2.- la suma de de la diagonal principal
 // [1,4,4,4]
-// matriz=[[1,2,5,4],
-	// 	[2,4,3,1],
-	// 	[1,5,4,7],
-	// 	[7,1,2,4]];
+matriz=[[1,2,5,4],
+		[2,4,3,1],
+		[1,5,4,7],
+		[7,1,2,4]];
 	// var resultado=0;
 	// var filas=matriz.length;
 	// for (var i = 0; i < filas; i++) {
@@ -384,10 +384,101 @@
 // [7,4,5,1]
 // [1,3,4,2]
 // [4,5,2,1]
+// matriz=[[1,2,5,4],
+// 		[2,4,3,1],
+// 		[1,5,4,7],
+// 		[7,1,2,4]];
+// var temp=0;
+// var gu=0;
+// var vector=[];
+// var tam=matriz.length-1;
+// for (var i = matriz.length/2 ; i > 0; i--) {
+// 	vector=matriz[temp];
+// 	matriz[temp++]=matriz[tam];
+// 	matriz[tam--]=vector;
+// 	console.log('/')
+// };
+// for (var i = 0; i <= matriz.length-1; i++) {
+// 	console.log(matriz[i])
+// };
+
+
+// for (var i = 0; i <= matriz.length - 1; i++) {
+// 	var ultima=matriz[0].length-1;
+// 	temp=0;
+// 	for (var j = (matriz[0].length)/2; j > 0; j--) {
+// 		// console.log('j='+j)
+// 		gu=matriz[i][temp];
+// 		matriz[i][temp++]=matriz[i][ultima];
+// 		matriz[i][ultima--]=gu;
+// 		// console.log('matriz='+matriz[i][temp])
+// 	};
+// };
+// for (var i = 0; i <= matriz.length-1; i++) {
+// 	console.log(matriz[i])
+// };
+
+
 //2.-suma de la diagonal secundaria = 19
-//3.-cuantas veces se repite el numero 5 en la matriz e
-//   imprimir la posicion donde esten estos.
-//4.-suma de la los datos que esten debajo de 
-//   la diagonal principal de la matriz =22
+// matriz=[[1,2,5,4],
+// 		[2,4,3,1],
+// 		[1,5,4,7],
+// 		[7,1,2,4]];
+// var resultado=0;
+// var temp=0;
+// for (var i = matriz.length - 1; i >= 0; i--) {
+// 	resultado=resultado+matriz[temp++][i]
+// };
+// console.log(resultado)
+// //3.-cuantas veces se repite el numero 5 en la matriz e
+// //   imprimir la posicion donde esten estos.
+// matriz=[[1,2,5,4],
+// 		   [2,4,3,1],
+// 		   [1,5,4,7],
+// 		   [7,1,2,4]];
+
+// matriz=[[1,2,5,4],
+// 		[2,4,3,1],
+// 		[1,5,4,7],
+// 		[7,1,2,4]];
+// var cantidad=0;
+// for (var i = matriz.length - 1; i >= 0; i--) {
+// 	for (var j = matriz.length - 1; j >= 0; j--) {
+// 		if (matriz[i][j]==5) {
+// 			cantidad++;
+// 			console.log('posicion= ['+i+'] ['+j+']')
+// 		};
+// 	};
+// };
+
+// //4.-suma de la los datos que esten debajo de 
+//   la diagonal principal de la matriz =18
+// matriz=[[1,2,5,4],
+// 		[2,4,3,1],
+// 		[1,5,4,7],
+// 		[7,1,2,4]];
+// var cantidad=0;
+// for (var i = 0; i <= matriz.length - 1; i++) {
+// 	for (var j = 0; j <=matriz.length - 1 ; j++) {
+// 		if (j<i) {
+// 			cantidad=cantidad+matriz[i][j];
+// 		};
+// 	};
+// };
+// console.log(cantidad)
 //5.-suma del perimetro = 37
+
 //
+matriz=[[1,2,5,4,1],
+		[2,4,3,1,1],
+		[1,5,4,7,1],
+		[7,1,2,4,1]];
+var cantidad=0;
+for (var i = 0; i <= matriz.length - 1; i++) {
+	for (var j = 0; j <=matriz[0].length - 1 ; j++) {
+		if (i==0 || i==matriz.length-1 || j==0 || j==matriz[0].length-1) {
+			cantidad=cantidad+matriz[i][j];
+		};
+	};
+};
+console.log(cantidad)
